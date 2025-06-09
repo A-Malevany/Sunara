@@ -2,6 +2,7 @@ body{
 	// font-family: 'JetBrains Mono';
 	// font-family: 'Sofia Sans Extra Condensed';
 	font-family: 'Onest';
+	color: $black;
 	&.popup-open{
 		overflow: hidden;
 	}

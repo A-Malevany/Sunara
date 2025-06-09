@@ -1,27 +1,30 @@
 .banner{
 	padding: 80px 0;
 	background: $white;
+	@media (max-width: 600px){
+		padding: 24px 0;
+	}
 	&__inner{
 		background: $accent;
 		color: $white;
 		padding: 116px;
-		clip-path: polygon(120px 0,
-			/* верхний левый скос */
-			100% 0,
-			/* верхний правый */
-			100% calc(100% - 120px),
-			/* скос снизу справа */
-			calc(100% - 120px) 100%,
-			/* нижний правый скос */
-			0 100%,
-			/* нижний левый */
-			0 120px
-			/* верхний левый (скос возвращаем) */
-		);
+		clip-path: polygon(120px 0, 100% 0, 100% calc(100% - 120px), calc(100% - 120px) 100%, 0 100%, 0 120px);
+		@media (max-width: 1280px){
+			clip-path: polygon(80px 0, 100% 0, 100% calc(100% - 80px), calc(100% - 80px) 100%, 0 100%, 0 80px);
+			padding: 116px 80px;
+		}
+		@media (max-width: 600px){
+			clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
+			padding: 48px 24px;
+		}
 	}
 	&__logo{
 		max-width: 428px;
 		margin-bottom: 32px;
+		@media (max-width: 600px){
+			max-width: 238px;
+			margin-bottom: 16px;
+		}
 	}
 	&__title{
 		max-width: 800px;

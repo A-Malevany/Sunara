@@ -28,6 +28,8 @@
 	}
 	.menu{
 		position: absolute;
+		z-index: 50;
+		background: $white;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -132,9 +134,9 @@
 					opacity: 0;
 					pointer-events: none;
 					transition: .3s ease;
-					width: 100%;
-					top: 100%;
-					left: 0;
+					width: calc(100% + 2px);
+					top: calc(100% - 2px);
+					left: -1px;
 					background: $white;
 					border: 1px solid $lines;
 					border-radius: 0px 0px 4px 4px;

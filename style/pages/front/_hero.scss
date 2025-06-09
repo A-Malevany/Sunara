@@ -1,5 +1,8 @@
 .hero{
 	padding: 80px 0;
+	@media (max-width: 600px){
+		padding: 24px 0;
+	}
 	&__inner{
 		margin-bottom: 64px;
 		position: relative;
@@ -7,6 +10,10 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+		@media (max-width: 600px){
+			padding: 16px 8px;
+			margin-bottom: 32px;
+		}
 	}
 	&__el-1, &__el-2, &__el-3, &__el-4{
 		position: absolute;
@@ -52,12 +59,18 @@
 		line-height: 1;
 		letter-spacing: 0.04em;
 		text-transform: uppercase;
+		@media (max-width: 600px){
+			margin-bottom: 16px;
+		}
 		svg{
 			flex-shrink: 0;
 		}
 	}
 	&__title{
 		margin-bottom: 20px;
+		@media (max-width: 600px){
+			margin-bottom: 8px;
+		}
 	}
 	&__dscr{
 		max-width: 535px;
@@ -65,8 +78,21 @@
 	&__img{
 		display: block;
 		width: 100%;
+		clip-path: polygon(120px 0, 100% 0, 100% calc(100% - 120px), calc(100% - 120px) 100%, 0 100%, 0 120px);
+		@media (max-width: 1280px){
+			clip-path: polygon(80px 0, 100% 0, 100% calc(100% - 80px), calc(100% - 80px) 100%, 0 100%, 0 80px);
+		}
+		@media (max-width: 600px){
+			clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
+		}
 		img{
 			display: block;
+			@media (max-width: 1000px){
+				aspect-ratio: 4/2.5;
+			}
+			@media (max-width: 600px){
+				aspect-ratio: 4/4;
+			}
 		}
 	}
 }

@@ -2,6 +2,9 @@
 	padding: 80px 0;
 	border-top: 1px solid $lines;
 	background: $white-bg;
+	@media (max-width: 600px){
+		padding: 24px 0;
+	}
 	&__wrapper{
 		max-width: 896px;
 		margin: 0 auto;
@@ -15,12 +18,13 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			background: $lines;
-			clip-path: polygon(121px 0,
-			100% 0,
-			100% calc(100% - 121px),
-			calc(100% - 121px) 100%,
-			0 100%,
-			0 121px);
+			clip-path: polygon(121px 0, 100% 0, 100% calc(100% - 121px), calc(100% - 121px) 100%, 0 100%, 0 121px);
+			@media (max-width: 1280px){
+				clip-path: polygon(81px 0, 100% 0, 100% calc(100% - 81px), calc(100% - 81px) 100%, 0 100%, 0 81px);
+			}
+			@media (max-width: 600px){
+				clip-path: polygon(41px 0, 100% 0, 100% calc(100% - 41px), calc(100% - 41px) 100%, 0 100%, 0 41px);
+			}
 		}
 	}
 	&__inner{
@@ -32,12 +36,14 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		clip-path: polygon(120px 0,
-			100% 0,
-			100% calc(100% - 120px),
-			calc(100% - 120px) 100%,
-			0 100%,
-			0 120px);
+		clip-path: polygon(120px 0, 100% 0, 100% calc(100% - 120px), calc(100% - 120px) 100%, 0 100%, 0 120px);
+		@media (max-width: 1280px){
+			clip-path: polygon(80px 0, 100% 0, 100% calc(100% - 80px), calc(100% - 80px) 100%, 0 100%, 0 80px);
+		}
+		@media (max-width: 600px){
+			padding: 16px;
+			clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px);
+		}
 	}
 	&__name{
 		display: block;
@@ -66,6 +72,15 @@
 		@media (max-width: 600px){
 			font-size: 40px;
 			line-height: 1.05;
+			margin: 8px;
+		}
+	}
+	&__dscr{
+		@media (max-width: 600px){
+			max-width: 90%;
+			br{
+				display: none;
+			}
 		}
 	}
 }

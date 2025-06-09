@@ -1,29 +1,44 @@
 .products{
 	background: $white-bg;
 	padding: 64px 0;
+	@media (max-width: 600px){
+		padding: 24px 0;
+	}
 	&__title{
 		margin-bottom: 64px;
+		@media (max-width: 600px){
+			margin-bottom: 50px;
+		}
 	}
 	&__items{
 		display: grid;
 		grid-template-columns: repeat(2, minmax(auto, 1fr));
 		gap: 32px;
+		@media (max-width: 1000px){
+			grid-template-columns: repeat(1, minmax(auto, 1fr));
+			gap: 16px;
+		}
 	}
 	&__item{
 		padding: 32px;
-		clip-path: polygon(0 0,
-			/* верхний левый */
-			calc(100% - 120px) 0,
-			/* скос справа сверху */
-			100% 120px,
-			/* верхний правый */
-			100% 100%,
-			/* нижний правый */
-			120px 100%,
-			/* скос снизу слева */
-			0 calc(100% - 120px)
-			/* нижний левый */
-		);
+		clip-path: polygon(0 0, calc(100% - 120px) 0, 100% 120px, 100% 100%, 120px 100%, 0 calc(100% - 120px));
+		@media (max-width: 1280px){
+			clip-path: polygon(0 0, calc(100% - 80px) 0, 100% 80px, 100% 100%, 80px 100%, 0 calc(100% - 80px));
+		}
+		@media (max-width: 600px){
+			clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 60px, 100% 100%, 60px 100%, 0 calc(100% - 60px));
+			padding: 16px;
+			&:first-child{
+				.products__item-img{
+					width: 100px !important;
+				}
+			}
+			&:nth-child(2){
+				.products__item-img{
+					width: 144px !important;
+				}
+			}
+		}
 		&:first-child{
 			background: $white;
 		}
@@ -37,11 +52,17 @@
 		}
 		&-title{
 			margin-bottom: 32px;
+			@media (max-width: 600px){
+				margin-bottom: 16px;
+			}
 		}
 		&-img{
 			width: auto;
 			display: block;
 			margin-bottom: 94px;
+			@media (max-width: 600px){
+				margin-bottom: 16px;
+			}
 		}
 		&-btn{
 			margin-left: auto;

@@ -1,11 +1,18 @@
 .about{
 	padding: 80px 0;
 	background: $white-bg;
+	@media (max-width: 600px){
+		padding: 24px 0;
+	}
 	&__inner{
 		display: grid;
 		grid-template-columns: repeat(2, minmax(auto, 1fr));
 		align-items: center;
 		gap: 32px;
+		@media (max-width: 1000px){
+			grid-template-columns: repeat(1, minmax(auto, 1fr));
+			gap: 16px;
+		}
 	}
 	&__body{
 		span{
@@ -28,5 +35,15 @@
 	}
 	&__img{
 		display: block;
+		clip-path: polygon(0 0, calc(100% - 120px) 0, 100% 120px, 100% 100%, 120px 100%, 0 calc(100% - 120px));
+		@media (max-width: 1280px){
+			clip-path: polygon(0 0, calc(100% - 80px) 0, 100% 80px, 100% 100%, 80px 100%, 0 calc(100% - 80px));
+		}
+		@media (max-width: 1000px){
+			order: -1;
+		}
+		@media (max-width: 600px){
+			clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 60px, 100% 100%, 60px 100%, 0 calc(100% - 60px));
+		}
 	}
 }
