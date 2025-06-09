@@ -1,20 +1,34 @@
 /*START critical css*/
 @import './common/var';
-// @import './functions';
 @import './common/nullstyle';
 @import './common/fonts';
 @import './common/general';
 @import './common/slick';
-@import './common/fancybox.min';
 @import './common/header';
 @import './common/footer';
 /*END critical css*/
 
 //Modules
-@import './modules/popup';
 @import './modules/title-section';
 @import './modules/btn';
 @import './modules/inputs';
 
 //Front
 @import './pages/front/hero';
+@import './pages/front/products';
+@import './pages/front/banner';
+@import './pages/front/history';
+@import './pages/front/about';
+@import './pages/front/benefits';
+@import './pages/front/call';
+
+//About
+@import './pages/about/benefits';
+@import './pages/about/industries';
+@import './pages/about/stages';
+
+//Contacts
+@import './pages/contacts/contacts';
+
+//Products single
+@import './pages/products-single/products-single';

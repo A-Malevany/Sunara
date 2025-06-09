@@ -1,118 +1,304 @@
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-Thin.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Thin.ttf");
 	font-weight: 100;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-ThinItalic.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-ThinItalic.ttf");
 	font-weight: 100;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-ExtraLight.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-ExtraLight.ttf");
 	font-weight: 200;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-ExtraLightItalic.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-ExtraLightItalic.ttf");
 	font-weight: 200;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Light.ttf");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-LightItalic.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Italic.ttf");
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Medium.ttf");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-MediumItalic.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-MediumItalic.ttf");
 	font-weight: 500;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-SemiBold.ttf");
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-SemiBoldItalic.ttf");
 	font-weight: 600;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Bold.ttf");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-BoldItalic.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-BoldItalic.ttf");
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-ExtraBold.ttf");
 	font-weight: 800;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf");
+	font-family: 'JetBrains Mono';
+	src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-ExtraBoldItalic.ttf");
+	font-weight: 800;
+	font-style: italic;
+}
+
+//Sofia Sans Extra Condensed
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-Thin.ttf");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-ThinItalic.ttf");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-ExtraLight.ttf");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-ExtraLightItalic.ttf");
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-LightItalic.ttf");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-MediumItalic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-SemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-SemiBoldItalic.ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-BoldItalic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-ExtraBold.ttf");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-ExtraBoldItalic.ttf");
 	font-weight: 800;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-Black.ttf");
 	font-weight: 900;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-BlackItalic.ttf");
+	font-family: 'Sofia Sans Extra Condensed';
+	src: url("../fonts/Sofia_Sans_Extra_Condensed/static/SofiaSansExtraCondensed-BlackItalic.ttf");
 	font-weight: 900;
 	font-style: italic;
+}
+
+//Onest
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-Thin.ttf");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-ExtraLight.ttf");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-SemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-ExtraBold.ttf");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url("../fonts/Onest/static/Onest-Black.ttf");
+	font-weight: 900;
+	font-style: normal;
 }
