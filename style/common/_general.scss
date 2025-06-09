@@ -2,6 +2,9 @@ body{
 	// font-family: 'JetBrains Mono';
 	// font-family: 'Sofia Sans Extra Condensed';
 	font-family: 'Onest';
+	&.popup-open{
+		overflow: hidden;
+	}
 }
 
 html, body{
@@ -15,14 +18,11 @@ main{
 }
 
 .container{
-	max-width: calc(1260px + 120px);
+	max-width: calc(1360px + 80px);
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 60px;
-	@media(max-width: 1280px){
-		padding: 0 40px;
-	}
+	padding: 0 40px;
 	@media(max-width: 600px){
-		padding: 0 20px;
+		padding: 0 16px;
 	}
 }

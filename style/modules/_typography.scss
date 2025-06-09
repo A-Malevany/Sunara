@@ -1,0 +1,54 @@
+h1{
+	font-family: 'Sofia Sans Extra Condensed';
+	font-weight: 900;
+	font-size: 80px;
+	line-height: .95;
+	text-transform: uppercase;
+	@media (max-width: 600px){
+		font-size: 40px;
+		line-height: 1.05;
+	}
+}
+
+h2{
+	font-family: 'Sofia Sans Extra Condensed';
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 1.03;
+	text-transform: uppercase;
+	@media (max-width: 600px){
+		font-size: 32px;
+	}
+}
+
+h3{
+	font-family: 'Sofia Sans Extra Condensed';
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 1.05;
+	text-transform: uppercase;
+	@media (max-width: 600px){
+		line-height: 1;
+		font-size: 24px;
+	}
+}
+
+body{
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: -0.02em;
+}
+
+button{
+	font-family: 'JetBrains Mono';
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	@media (max-width: 600px){
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.04em;
+	}
+}
