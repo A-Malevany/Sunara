@@ -1,0 +1,51 @@
+.products{
+	background: $white-bg;
+	padding: 64px 0;
+	&__title{
+		margin-bottom: 64px;
+	}
+	&__items{
+		display: grid;
+		grid-template-columns: repeat(2, minmax(auto, 1fr));
+		gap: 32px;
+	}
+	&__item{
+		padding: 32px;
+		clip-path: polygon(0 0,
+			/* верхний левый */
+			calc(100% - 120px) 0,
+			/* скос справа сверху */
+			100% 120px,
+			/* верхний правый */
+			100% 100%,
+			/* нижний правый */
+			120px 100%,
+			/* скос снизу слева */
+			0 calc(100% - 120px)
+			/* нижний левый */
+		);
+		&:first-child{
+			background: $white;
+		}
+		&:nth-child(even){
+			background: $accent;
+			color: $white;
+			.btn{
+				background: $white;
+				color: $accent;
+			}
+		}
+		&-title{
+			margin-bottom: 32px;
+		}
+		&-img{
+			width: auto;
+			display: block;
+			margin-bottom: 94px;
+		}
+		&-btn{
+			margin-left: auto;
+			width: max-content;
+		}
+	}
+}

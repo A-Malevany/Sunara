@@ -1,0 +1,68 @@
+.benefits{
+	background: $white-bg;
+	padding: 144px 0;
+	&__inner{
+		max-width: 1128px;
+		margin: 0 auto;
+		position: relative;
+	}
+	&__img{
+		display: block;
+		max-width: 1128px;
+		margin: 0 auto;
+	}
+	&__item{
+		min-width: 160px;
+		position: absolute;
+		border: 1px solid $lines;
+		border-radius: 16px;
+		padding: 32px 24px;
+		backdrop-filter: blur(8px);
+		background: $white;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+		&-num{
+			width: 28px;
+			aspect-ratio: 4/4;
+			display: block;
+		}
+		&-title{
+			font-family: 'Sofia Sans Extra Condensed';
+			font-weight: 900;
+			font-size: 40px;
+			line-height: 1.05;
+			text-transform: uppercase;
+		}
+		&-num-big{
+			position: absolute;
+			left: 0;
+			bottom: -36px;
+			width: 28px;
+			aspect-ratio: 4/4;
+			display: block;
+		}
+	}
+	&__item-1{
+		bottom: 36px;
+		left: 0;
+	}
+	&__item-2{
+		top: -82px;
+		left: 30%;
+		.benefits__item-num-big{
+			left: auto;
+			right: 0;
+			bottom: -36px;
+		}
+	}
+	&__item-3{
+		right: 32px;
+		top: 29%;
+		.benefits__item-num-big{
+			bottom: 0;
+			left: -36px;
+		}
+	}
+}

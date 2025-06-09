@@ -1,0 +1,29 @@
+.banner{
+	padding: 80px 0;
+	background: $white;
+	&__inner{
+		background: $accent;
+		color: $white;
+		padding: 116px;
+		clip-path: polygon(120px 0,
+			/* верхний левый скос */
+			100% 0,
+			/* верхний правый */
+			100% calc(100% - 120px),
+			/* скос снизу справа */
+			calc(100% - 120px) 100%,
+			/* нижний правый скос */
+			0 100%,
+			/* нижний левый */
+			0 120px
+			/* верхний левый (скос возвращаем) */
+		);
+	}
+	&__logo{
+		max-width: 428px;
+		margin-bottom: 32px;
+	}
+	&__title{
+		max-width: 800px;
+	}
+}
