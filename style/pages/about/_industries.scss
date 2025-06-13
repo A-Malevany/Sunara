@@ -1,0 +1,23 @@
+.industries{
+	padding: 80px 0;
+	background: $white-bg;
+	&__title{
+		margin-bottom: 32px;
+	}
+	&__items{
+		display: grid;
+		grid-template-columns: repeat(3, minmax(auto, 1fr));
+		gap: 32px;
+	}
+	&__item{
+		&-img{
+			clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+			aspect-ratio: 4/4;
+			display: block;
+			margin-bottom: 24px;
+		}
+		&-title{
+			margin-bottom: 4px;
+		}
+	}
+}

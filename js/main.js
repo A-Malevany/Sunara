@@ -16,3 +16,18 @@ function menuMobile() {
 	})
 }
 menuMobile();
+
+function tabsToggle() {
+	$(document).ready(function () { 
+		$('.tabs-wrapper .tab-item:first').trigger('click');
+	});
+
+	$('.tab-item').click(function () {
+		$(this).closest('.tabs-wrapper').find('.tab-item').removeClass('active');
+		$(this).addClass('active');
+
+		$(this).closest('.tabs-wrapper').find('.tab-content').fadeOut(0);
+		$(`#${$(this).data('tab_id')}`).fadeIn(200);
+	})
+}
+tabsToggle();

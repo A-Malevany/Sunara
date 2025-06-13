@@ -59,6 +59,9 @@
 				gap: 0;
 			}
 			& > li{
+				&.active{
+					color: $accent;
+				}
 				&.arrow{
 					& > span{
 						cursor: pointer;
