@@ -41,6 +41,7 @@
 			top: 89px;
 			left: 0;
 			width: 100%;
+			height: calc(100dvh - 89px);
 			transform: translate(0%, 0%);
 			border-radius: 0px;
 			border: none;
@@ -48,6 +49,7 @@
 		}
 		@media (max-width: 600px){
 			top: 65px;
+			height: calc(100dvh - 65px);
 		}
 		&-list{
 			display: flex;
@@ -59,6 +61,11 @@
 				gap: 0;
 			}
 			& > li{
+				&:last-child a{
+					@media (max-width: 600px){
+						border: none;
+					}
+				}
 				&.active{
 					color: $accent;
 				}

@@ -1,8 +1,15 @@
 .stages{
 	padding: 80px 0;
+	@media (max-width: 600px){
+		padding: 24px 0 48px 0;
+	}
 	&__top{
 		position: relative;
 		margin-bottom: 80px;
+		@media (max-width: 600px){
+			margin-bottom: 32px;
+			padding: 16px 8px;
+		}
 		span{
 			font-family: "JetBrains Mono";
 			font-weight: 500;
@@ -56,6 +63,9 @@
 		display: grid;
 		grid-template-columns: repeat(2, minmax(auto, 1fr));
 		gap: 32px;
+		@media (max-width: 1000px){
+			display: none;
+		}
 	}
 	.tab-content{
 		display: none;
@@ -152,8 +162,91 @@
 			transition: .3s ease;
 		}
 		&-dscr{
+			max-width: 550px;
 			color: #7F7F7F;
 			transition: .3s ease;
+		}
+	}
+
+	//Mobile
+	&__inner-m{
+		display: none;
+		@media (max-width: 1000px){
+			display: block;
+		}
+	}
+	&__slider{
+	}
+	&__slider-nav{
+		margin-top: 24px;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(auto, 1fr));
+		gap: 8px;
+		.slick-arrow{
+			font-size: 0;
+			border: none;
+			display: block;
+			cursor: pointer;
+			padding: 0;
+			height: 48px;
+			background: $accent;
+			border-radius: 4px;
+			padding: 16px 20px;
+			border: 1px solid $accent;
+			transition: .3s ease;
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+		.slick-prev{
+			&::before{
+				background-image: url("../images/icons/prev-white.svg");
+			}
+			&.slick-disabled{
+				&::before{
+					background-image: url("../images/icons/prev.svg");
+				}
+			}
+		}
+		.slick-next{
+			&::before{
+				background-image: url("../images/icons/next-white.svg");
+			}
+			&.slick-disabled{
+				&::before{
+					background-image: url("../images/icons/next.svg");
+				}
+			}
+		}
+		.slick-disabled{
+			background: $white;
+			border-color: $lines;
+		}
+	}
+	&__slider-item{
+		&-img{
+			display: block;
+			margin-bottom: 24px;
+		}
+		&-content-top{
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			margin-bottom: 4px;
+			img{
+				width: 28px;
+				height: 28px;
+			}
 		}
 	}
 }

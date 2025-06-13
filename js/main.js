@@ -31,3 +31,17 @@ function tabsToggle() {
 	})
 }
 tabsToggle();
+
+function slickCarousel() {
+	$('.stages__slider').slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 1,
+		centerMode: true,
+		infinite: false,
+		slidesToScroll: 1,
+		centerPadding: '0px',
+		appendArrows: $('.stages__slider-nav'),
+	});
+}
+slickCarousel();
