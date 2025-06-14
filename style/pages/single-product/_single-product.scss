@@ -1,0 +1,98 @@
+.single-product{
+	padding: 80px 0;
+	& + .single-product{
+		padding-top: 0;
+	}
+	@media (max-width: 600px){
+		padding: 24px 0 48px 0;
+	}
+	&__top{
+		padding: 32px 0;
+		position: relative;
+		margin-bottom: 32px;
+		@media (max-width: 600px){
+			padding: 16px 8px;
+			margin-bottom: 40px;
+		}
+	}
+	&__el-1, &__el-2, &__el-3, &__el-4{
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background-image: url("../images/icons/triangle-el.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	&__el-1{
+		top: 0;
+		left: 0;
+	}
+	&__el-2{
+		top: 0;
+		right: 0;
+		transform: rotate(90deg);
+	}
+	&__el-3{
+		bottom: 0;
+		left: 0;
+		transform: rotate(-90deg);
+		display: none;
+	}
+	&__el-4{
+		bottom: 0;
+		right: 0;
+		transform: rotate(180deg);
+	}
+	&__inner{
+		overflow-y: auto;
+		padding-bottom: 8px;
+		&::-webkit-scrollbar{
+			border-radius: 12px;
+			background: $lines;
+			height: 8px;
+		}
+		&::-webkit-scrollbar-thumb{
+			background: $accent;
+			border-radius: 12px;
+		}
+		@media (max-width: 600px){
+			margin: 0 -16px;
+		}
+	}
+	table{
+		width: 100%;
+		min-width: 902px;
+		table-layout: fixed;
+		thead{
+			th{
+				background: $accent;
+				color: $white;
+				padding: 16px 10px;
+				font-family: 'JetBrains Mono';
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 1.33;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				text-align: center;
+			}
+		}
+		tbody{
+			td{
+				padding: 8px 10px;
+				background: $white-bg;
+				font-family: 'JetBrains Mono';
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 1.33;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				text-align: center;
+				&.gray{
+					background: $lines;
+				}
+			}
+		}
+	}
+}

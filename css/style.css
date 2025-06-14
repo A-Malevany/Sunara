@@ -2334,3 +2334,110 @@ button {
 .contacts__img img {
   display: block;
 }
+
+.single-product {
+  padding: 80px 0;
+}
+.single-product + .single-product {
+  padding-top: 0;
+}
+@media (max-width: 600px) {
+  .single-product {
+    padding: 24px 0 48px 0;
+  }
+}
+.single-product__top {
+  padding: 32px 0;
+  position: relative;
+  margin-bottom: 32px;
+}
+@media (max-width: 600px) {
+  .single-product__top {
+    padding: 16px 8px;
+    margin-bottom: 40px;
+  }
+}
+.single-product__el-1, .single-product__el-2, .single-product__el-3, .single-product__el-4 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icons/triangle-el.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.single-product__el-1 {
+  top: 0;
+  left: 0;
+}
+.single-product__el-2 {
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.single-product__el-3 {
+  bottom: 0;
+  left: 0;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: none;
+}
+.single-product__el-4 {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.single-product__inner {
+  overflow-y: auto;
+  padding-bottom: 8px;
+}
+.single-product__inner::-webkit-scrollbar {
+  border-radius: 12px;
+  background: #DFDFDF;
+  height: 8px;
+}
+.single-product__inner::-webkit-scrollbar-thumb {
+  background: #FF4100;
+  border-radius: 12px;
+}
+@media (max-width: 600px) {
+  .single-product__inner {
+    margin: 0 -16px;
+  }
+}
+.single-product table {
+  width: 100%;
+  min-width: 902px;
+  table-layout: fixed;
+}
+.single-product table thead th {
+  background: #FF4100;
+  color: #FFFFFF;
+  padding: 16px 10px;
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.single-product table tbody td {
+  padding: 8px 10px;
+  background: #FAFAFA;
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.single-product table tbody td.gray {
+  background: #DFDFDF;
+}
